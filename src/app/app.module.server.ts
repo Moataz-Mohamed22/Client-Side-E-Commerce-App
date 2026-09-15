@@ -5,6 +5,7 @@ import { AppModule } from './app-module';
 import { serverRoutes } from './app.routes.server';
 
 @NgModule({
+  declarations: [],
   imports: [AppModule],
   providers: [provideServerRendering(withRoutes(serverRoutes))],
   bootstrap: [App],

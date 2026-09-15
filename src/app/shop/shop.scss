@@ -1,0 +1,151 @@
+@use './shop-item/variables.scss' as *;
+
+:host {
+  --primary: #008ecc;
+  --heading: #222222;
+  --yellow: #e3bc01;
+  --text: #555555;
+  --light-bg: #f8fafc;
+  --border: #e5e7eb;
+  --white: #ffffff;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.main-title {
+  color: var(--heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: $border-radius;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+  color: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.custom-select-wrapper {
+  .form-select {
+    border: 1px solid var(--border);
+    border-radius: $border-radius;
+    color: var(--text);
+    padding: 0.7rem 1rem;
+
+    transition:
+      border-color $transition-duration ease,
+      box-shadow $transition-duration ease;
+
+    &:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.2rem rgba(0, 142, 204, 0.12);
+    }
+  }
+}
+
+.custom-list-group {
+  padding: 0;
+  margin: 0;
+
+  .custom-list-group-item {
+    border: 1px solid var(--border);
+    border-radius: $border-radius;
+    background-color: var(--white);
+    color: var(--text);
+
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.5rem;
+
+    font-weight: 500;
+    cursor: pointer;
+
+    transition:
+      background-color $transition-duration ease,
+      color $transition-duration ease,
+      border-color $transition-duration ease,
+      transform $transition-duration ease;
+
+    &:hover {
+      background-color: var(--light-bg);
+      color: var(--primary);
+      border-color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    &:active {
+      background-color: var(--primary);
+      border-color: var(--primary);
+      color: var(--white);
+    }
+  }
+}
+
+.paging-container {
+  span {
+    color: var(--text) !important;
+    font-size: 0.95rem;
+  }
+}
+
+.search-container {
+  max-width: 450px;
+  width: 100%;
+}
+
+.search-bar {
+  .form-control {
+    border: 1px solid var(--border);
+    padding: 0.65rem 1rem;
+
+    &:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 0.2rem rgba(0, 142, 204, 0.12);
+    }
+  }
+
+  .btn {
+    padding: 0.65rem 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    margin-bottom: 1.5rem;
+  }
+
+  .search-container {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 1.7rem;
+  }
+
+  .search-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sidebar {
+    padding: 1rem;
+  }
+}

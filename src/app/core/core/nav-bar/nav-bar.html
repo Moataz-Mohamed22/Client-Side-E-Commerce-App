@@ -1,0 +1,157 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand" routerLink="/">
+      E-Commerce
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+
+      <!-- Left Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/shopping" routerLinkActive="active">
+            Shopping
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">
+            About us
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/best-seller" routerLinkActive="active">
+            Best Seller
+          </a>
+        </li>
+
+      </ul>
+
+
+      <!-- Search -->
+      <form class="d-flex mx-lg-4 my-2 my-lg-0">
+
+        <div class="input-group">
+
+          <input type="text" class="form-control" placeholder="Search..." aria-label="Search">
+
+          <button class="btn btn-light" type="button">
+
+            <i class="material-icons">
+              search
+            </i>
+
+          </button>
+
+        </div>
+
+      </form>
+
+
+      <!-- Right Menu -->
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+
+        <!-- Shopping Cart -->
+        <li class="nav-item">
+
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active" title="Shopping Cart">
+
+            <i class="material-icons">
+              shopping_cart
+            </i>
+
+          </a>
+
+        </li>
+
+
+        <!-- Account Dropdown -->
+        <li class="nav-item dropdown">
+
+          <a (click)="ToggleDropDown()" class="nav-link dropdown-toggle" href="javascript:void(0)" id="accountDropdown" role="button"
+            aria-expanded="false">
+
+            <i class="material-icons">
+              account_circle
+            </i>
+
+          </a>
+
+
+          <!-- Dropdown Menu -->
+          <ul [ngClass]="{'show':visible}" class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+
+            <li>
+
+              <a class="dropdown-item" routerLink="/register">
+
+                Register
+
+                <i class="fa fa-user-plus ms-2"></i>
+
+              </a>
+
+            </li>
+
+
+            <li>
+
+              <a class="dropdown-item" routerLink="/login">
+
+                Login
+
+                <i class="fa fa-sign-in ms-2"></i>
+
+              </a>
+
+            </li>
+
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+
+            <li>
+
+              <a class="dropdown-item" routerLink="/orders">
+
+                My Orders
+
+                <i class="fa fa-list ms-2"></i>
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
