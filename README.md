@@ -1,59 +1,103 @@
-# Client
+# Client-Side E-Commerce App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.3.
+An **Angular client-side E-Commerce application** built to consume and interact with the **ASP.NET Core E-Commerce Web API** that I developed.
 
-## Development server
+## 🔗 Backend API
 
-To start a local development server, run:
+This application consumes the E-Commerce API:
+
+**E-Commerce API Repository:**
+`YOUR_API_REPOSITORY_LINK`
+
+## 🚀 Features
+
+* 🏠 Home Page
+* 🛍️ Product Listing
+* 🔎 Product Search
+* 🗂️ Filter Products by Category
+* 💰 Sort Products by Price
+* 📄 Pagination
+* 🔄 Multiple Filtering & Sorting
+* 📱 Responsive UI
+* 🔌 Integration with ASP.NET Core Web API
+
+## 🛠️ Technologies
+
+* Angular
+* TypeScript
+* HTML5
+* CSS3
+* Bootstrap
+* RESTful APIs
+* ASP.NET Core Web API
+
+## 📂 Project Structure
+
+```text
+src/
+├── app/
+│   ├── core/
+│   ├── shared/
+│   ├── features/
+│   ├── interfaces/
+│   └── services/
+└── assets/
+```
+
+## ⚙️ Development server
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open your browser and navigate to:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The application will automatically reload whenever you modify the source files.
 
-```bash
-ng generate --help
-```
+## 🏗️ Build
 
-## Building
-
-To build the project run:
+To build the project:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## 🧪 Testing
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Run unit tests:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## 📸 Project Preview
 
-For end-to-end (e2e) testing, run:
+*Add screenshots of the application here.*
 
-```bash
-ng e2e
-```
+## 🔗 Related Project
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### Backend
 
-## Additional Resources
+**ASP.NET Core E-Commerce API**
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`YOUR_API_REPOSITORY_LINK`
+
+## 👨‍💻 Author
+
+**Moataz Mohamed**
+
+GitHub: `Moataz-Mohamed22`
