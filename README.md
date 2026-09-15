@@ -4,10 +4,10 @@ An **Angular client-side E-Commerce application** built to consume and interact 
 
 ## 🔗 Backend API
 
-This application consumes the E-Commerce API:
+This application consumes the E-Commerce API developed with **ASP.NET Core Web API**.
 
-**E-Commerce API Repository:**
-`YOUR_API_REPOSITORY_LINK`
+**Backend Repository:**
+https://github.com/Moataz-Mohamed22/Ecommerce-App-.NET-8-And-Angular
 
 ## 🚀 Features
 
@@ -27,7 +27,7 @@ This application consumes the E-Commerce API:
 * TypeScript
 * HTML5
 * CSS3
-* Bootstrap
+* Bootstrap 5
 * RESTful APIs
 * ASP.NET Core Web API
 
@@ -44,31 +44,29 @@ src/
 └── assets/
 ```
 
-## ⚙️ Development server
+## ⚙️ Getting Started
 
-Install the dependencies:
+### 1. Install dependencies
 
 ```bash
 npm install
 ```
 
-Run the development server:
+### 2. Run the development server
 
 ```bash
 ng serve
 ```
 
-Open your browser and navigate to:
+Then open:
 
 ```text
 http://localhost:4200/
 ```
 
-The application will automatically reload whenever you modify the source files.
+The application will automatically reload whenever you modify the source code.
 
 ## 🏗️ Build
-
-To build the project:
 
 ```bash
 ng build
@@ -76,28 +74,18 @@ ng build
 
 The build artifacts will be stored in the `dist/` directory.
 
-## 🧪 Testing
-
-Run unit tests:
-
-```bash
-ng test
-```
-
-## 📸 Project Preview
-
-*Add screenshots of the application here.*
-
 ## 🔗 Related Project
 
-### Backend
+### ASP.NET Core E-Commerce API
 
-**ASP.NET Core E-Commerce API**
+This Angular application is the **client side** of the E-Commerce system.
 
-`YOUR_API_REPOSITORY_LINK`
+**Backend Repository:**
+https://github.com/Moataz-Mohamed22/Ecommerce-App-.NET-8-And-Angular
 
 ## 👨‍💻 Author
 
 **Moataz Mohamed**
 
-GitHub: `Moataz-Mohamed22`
+GitHub:
+https://github.com/Moataz-Mohamed22
